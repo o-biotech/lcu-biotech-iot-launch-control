@@ -2,75 +2,99 @@
   "Applications": {
     "{{PROJECT_LOOKUP}}-data-dashboard": {
       "Application": {
-        "Description": "A simple data dashboard",
-        "Name": "Data Dashboard"
+        "Details": {
+          "Description": "A simple data dashboard",
+          "Name": "Data Dashboard"
+        }
       },
       "LookupConfig": {
         "PathRegex": "/dashboard.*"
       },
-      "LowCodeUnit": {
-        "Package": "@fathym-it/fathym-data-dashboard",
-        "Version": "latest",
-        "Type": "NPM"
+      "Package": {
+        "Details": {
+          "Package": "@fathym-it/fathym-data-dashboard",
+          "Version": "latest"
+        },
+        "Type": "NPMLowCodeUnit"
       },
       "Processor": {
-        "BaseHref": "/dashboard/",
-        "DefaultFile": "index.html",
-        "Type": "DFS"
+        "Details": {
+          "BaseHref": "/dashboard/",
+          "DefaultFile": "index.html"
+        },
+        "Type": "DFSProcessor"
       }
     },
     "{{PROJECT_LOOKUP}}-iot-ensemble-api-proxy": {
       "Application": {
-        "Name": "IoT Ensemble API Proxy",
-        "Description": "The API Proxy for IoT Ensemble APIs."
+        "Details": {
+          "Name": "IoT Ensemble API Proxy",
+          "Description": "The API Proxy for IoT Ensemble APIs."
+        }
       },
       "LookupConfig": {
         "PathRegex": "/api/iot.*"
       },
-      "LowCodeUnit": {
-        "APIRoot": "https://fathym-cloud-prd.azure-api.net/fcp-iotensemble",
-        "Security": "lcu-subscription-key~{{IOT_ENSEMBLE_API_KEY}}",
-        "Type": "API"
+      "Package": {
+        "Details": {
+          "APIRoot": "https://fathym-cloud-prd.azure-api.net/fcp-iotensemble",
+          "Security": "lcu-subscription-key~{{IOT_ENSEMBLE_API_KEY}}"
+        },
+        "Type": "APILowCodeUnit"
       },
       "Processor": {
-        "InboundPath": "api/iot",
-        "Type": "Proxy"
+        "Details": {
+          "InboundPath": "api/iot"
+        },
+        "Type": "ProxyProcessor"
       }
     },
     "{{PROJECT_LOOKUP}}-habistack-api-proxy": {
       "Application": {
-        "Name": "Habistack API Proxy",
-        "Description": "The API Proxy for Habistack APIs."
+        "Details": {
+          "Name": "Habistack API Proxy",
+          "Description": "The API Proxy for Habistack APIs."
+        }
       },
       "LookupConfig": {
         "PathRegex": "/api/habistack.*"
       },
-      "LowCodeUnit": {
-        "APIRoot": "https://fathym-cloud-prd.azure-api.net/habistack/weather/ground/",
-        "Security": "lcu-subscription-key~{{HABISTACK_API_KEY}}",
-        "Type": "API"
+      "Package": {
+        "Details": {
+          "APIRoot": "https://fathym-cloud-prd.azure-api.net/habistack/weather/ground/",
+          "Security": "lcu-subscription-key~{{HABISTACK_API_KEY}}"
+        },
+        "Type": "APILowCodeUnit"
       },
       "Processor": {
-        "InboundPath": "api/habistack",
-        "Type": "Proxy"
+        "Details": {
+          "InboundPath": "api/habistack"
+        },
+        "Type": "ProxyProcessor"
       }
     },
     "{{PROJECT_LOOKUP}}-geocodio-api-proxy": {
       "Application": {
-        "Name": "Geocodio API Proxy",
-        "Description": "The API Proxy for Geocodio APIs."
+        "Details": {
+          "Name": "Geocodio API Proxy",
+          "Description": "The API Proxy for Geocodio APIs."
+        }
       },
       "LookupConfig": {
         "PathRegex": "/api/geocodio.*"
       },
-      "LowCodeUnit": {
-        "APIRoot": "https://api.geocod.io/v1.7/",
-        "Security": "?api_key~{{GEOCODIO_API_KEY}}",
-        "Type": "API"
+      "Package": {
+        "Details": {
+          "APIRoot": "https://api.geocod.io/v1.7/",
+          "Security": "?api_key~{{GEOCODIO_API_KEY}}"
+        },
+        "Type": "APILowCodeUnit"
       },
       "Processor": {
-        "InboundPath": "api/geocodio",
-        "Type": "Proxy"
+        "Details": {
+          "InboundPath": "api/geocodio"
+        },
+        "Type": "ProxyProcessor"
       }
     }
   },
