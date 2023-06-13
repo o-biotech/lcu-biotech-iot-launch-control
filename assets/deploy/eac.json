@@ -1,0 +1,87 @@
+{
+  "Applications": {
+    "{{PROJECT_LOOKUP}}-data-dashboard": {
+      "Application": {
+        "Description": "A simple data dashboard",
+        "Name": "Data Dashboard"
+      },
+      "LookupConfig": {
+        "PathRegex": "/dashboard.*"
+      },
+      "LowCodeUnit": {
+        "Package": "@fathym-it/fathym-data-dashboard",
+        "Version": "latest",
+        "Type": "NPM"
+      },
+      "Processor": {
+        "BaseHref": "/dashboard/",
+        "DefaultFile": "index.html",
+        "Type": "DFS"
+      }
+    },
+    "{{PROJECT_LOOKUP}}-iot-ensemble-api-proxy": {
+      "Application": {
+        "Name": "IoT Ensemble API Proxy",
+        "Description": "The API Proxy for IoT Ensemble APIs."
+      },
+      "LookupConfig": {
+        "PathRegex": "/api/iot.*"
+      },
+      "LowCodeUnit": {
+        "APIRoot": "https://fathym-cloud-prd.azure-api.net/fcp-iotensemble",
+        "Security": "lcu-subscription-key~{{IOT_ENSEMBLE_API_KEY}}",
+        "Type": "API"
+      },
+      "Processor": {
+        "InboundPath": "api/iot",
+        "Type": "Proxy"
+      }
+    },
+    "{{PROJECT_LOOKUP}}-habistack-api-proxy": {
+      "Application": {
+        "Name": "Habistack API Proxy",
+        "Description": "The API Proxy for Habistack APIs."
+      },
+      "LookupConfig": {
+        "PathRegex": "/api/habistack.*"
+      },
+      "LowCodeUnit": {
+        "APIRoot": "https://fathym-cloud-prd.azure-api.net/habistack/weather/ground/",
+        "Security": "lcu-subscription-key~{{HABISTACK_API_KEY}}",
+        "Type": "API"
+      },
+      "Processor": {
+        "InboundPath": "api/habistack",
+        "Type": "Proxy"
+      }
+    },
+    "{{PROJECT_LOOKUP}}-geocodio-api-proxy": {
+      "Application": {
+        "Name": "Geocodio API Proxy",
+        "Description": "The API Proxy for Geocodio APIs."
+      },
+      "LookupConfig": {
+        "PathRegex": "/api/geocodio.*"
+      },
+      "LowCodeUnit": {
+        "APIRoot": "https://api.geocod.io/v1.7/",
+        "Security": "?api_key~{{GEOCODIO_API_KEY}}",
+        "Type": "API"
+      },
+      "Processor": {
+        "InboundPath": "api/geocodio",
+        "Type": "Proxy"
+      }
+    }
+  },
+  "Projects": {
+    "{{PROJECT_LOOKUP}}": {
+      "ApplicationLookups": [
+        "{{PROJECT_LOOKUP}}-data-dashboard",
+        "{{PROJECT_LOOKUP}}-iot-ensemble-api-proxy",
+        "{{PROJECT_LOOKUP}}-habistack-api-proxy",
+        "{{PROJECT_LOOKUP}}-geocodio-api-proxy"
+      ]
+    }
+  }
+}
