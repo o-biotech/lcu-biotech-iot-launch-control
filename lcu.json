@@ -7,13 +7,13 @@
   },
   "Configurations": {
     "Basic": {
-      "Name": "Basic NPM Package Deploy",
-      "Description": "A simple NPM package deployment.",
+      "Name": "Basic BioTech IoT Starter",
+      "Description": "A starting point for BioTech IoT .",
       "Phases": [
         {
-          "Name": "Deploy NPM Package",
+          "Name": "Configure BioTech IoT",
           "Order": 1,
-          "Asset": "deploy"
+          "Asset": "configure"
         }
       ]
     }
