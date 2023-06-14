@@ -24,9 +24,11 @@
       },
       "DataTokens": {
         "lcu-state-config": {
-          "Name": "state-config",
-          "Description": "state-config",
-          "Value": "{\"Location\": \"{{DEFAULT_LOCATION}}\"}"
+          "Details": {
+            "Name": "state-config",
+            "Description": "state-config",
+            "Value": "{\"Location\": \"{{DEFAULT_LOCATION}}\"}"
+          }
         }
       }
     },
