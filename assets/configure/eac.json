@@ -26,9 +26,9 @@
         "lcu-state-config": {
           "Details": {
             "Name": "state-config",
-            "Description": "state-config",
-            "Value": "{\"Location\": \"{{DEFAULT_LOCATION}}\"}"
-          }
+            "Description": "state-config"
+          },
+          "Value": "{\"Location\": \"{{DEFAULT_LOCATION}}\"}"
         }
       }
     },
