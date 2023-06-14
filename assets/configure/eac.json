@@ -1,12 +1,35 @@
 {
   "Applications": {
+    "{{PROJECT_LOOKUP}}-home-page": {
+      "Details": {
+        "Description": "A BioTech home page",
+        "Name": "A BioTech home page"
+      },
+      "LookupConfig": {
+        "PathRegex": "/.*"
+      },
+      "Package": {
+        "Details": {
+          "Package": "@fathym/fathym-public-web-biotech-gatsby",
+          "Version": "latest"
+        },
+        "Type": "NPMLowCodeUnit"
+      },
+      "Processor": {
+        "Details": {
+          "BaseHref": "/",
+          "DefaultFile": "index.html"
+        },
+        "Type": "DFSProcessor"
+      }
+    },
     "{{PROJECT_LOOKUP}}-data-dashboard": {
       "Details": {
         "Description": "A simple data dashboard",
         "Name": "Data Dashboard"
       },
       "LookupConfig": {
-        "PathRegex": "/.*"
+        "PathRegex": "/dashboard.*"
       },
       "Package": {
         "Details": {
@@ -17,7 +40,7 @@
       },
       "Processor": {
         "Details": {
-          "BaseHref": "/",
+          "BaseHref": "/dashboard/",
           "DefaultFile": "index.html"
         },
         "Type": "DFSProcessor"
@@ -102,6 +125,7 @@
   "Projects": {
     "{{PROJECT_LOOKUP}}": {
       "ApplicationLookups": [
+        "{{PROJECT_LOOKUP}}-home-page",
         "{{PROJECT_LOOKUP}}-data-dashboard",
         "{{PROJECT_LOOKUP}}-iot-ensemble-api-proxy",
         "{{PROJECT_LOOKUP}}-habistack-api-proxy",
