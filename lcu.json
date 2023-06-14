@@ -3,7 +3,14 @@
     "Name": "@o-biotech/lcu-biotech-iot-launch-control",
     "Description": "An LCU for installing @o-biotech/lcu-biotech-iot-launch-control.",
     "Image": "https://www.fathym.com/assets/images/logo.png",
-    "PreviewImage": "https://www.fathym.com/assets/images/logo.png"
+    "PreviewImage": "https://www.fathym.com/assets/images/logo.png",
+    "Intents": [
+      "BioTech",
+      "IoT Dashboard",
+      "Launch Control",
+      "Getting Started",
+      "Medical Devices"
+    ]
   },
   "Configurations": {
     "Basic": {
