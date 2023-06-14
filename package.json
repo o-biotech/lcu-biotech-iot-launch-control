@@ -5,7 +5,7 @@
   "author": "Fathym, Inc",
   "main": "lcu.json",
   "scripts": {
-    "deploy": "npx fathym git && npm version patch && npm publish --access public && npx fathym git"
+    "deploy": "npx fathym git && npm version patch && npm publish --access public --tag thinky && npx fathym git"
   },
   "keywords": [
     "lowcodeunit",
