@@ -6,7 +6,7 @@
         "Name": "Data Dashboard"
       },
       "LookupConfig": {
-        "PathRegex": "/dashboard.*"
+        "PathRegex": "/.*"
       },
       "Package": {
         "Details": {
@@ -17,7 +17,7 @@
       },
       "Processor": {
         "Details": {
-          "BaseHref": "/dashboard/",
+          "BaseHref": "/",
           "DefaultFile": "index.html"
         },
         "Type": "DFSProcessor"
