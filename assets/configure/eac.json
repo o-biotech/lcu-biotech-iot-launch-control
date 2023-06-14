@@ -1,11 +1,9 @@
 {
   "Applications": {
     "{{PROJECT_LOOKUP}}-data-dashboard": {
-      "Application": {
-        "Details": {
-          "Description": "A simple data dashboard",
-          "Name": "Data Dashboard"
-        }
+      "Details": {
+        "Description": "A simple data dashboard",
+        "Name": "Data Dashboard"
       },
       "LookupConfig": {
         "PathRegex": "/dashboard.*"
@@ -26,11 +24,9 @@
       }
     },
     "{{PROJECT_LOOKUP}}-iot-ensemble-api-proxy": {
-      "Application": {
-        "Details": {
-          "Name": "IoT Ensemble API Proxy",
-          "Description": "The API Proxy for IoT Ensemble APIs."
-        }
+      "Details": {
+        "Name": "IoT Ensemble API Proxy",
+        "Description": "The API Proxy for IoT Ensemble APIs."
       },
       "LookupConfig": {
         "PathRegex": "/api/iot.*"
@@ -50,11 +46,9 @@
       }
     },
     "{{PROJECT_LOOKUP}}-habistack-api-proxy": {
-      "Application": {
-        "Details": {
-          "Name": "Habistack API Proxy",
-          "Description": "The API Proxy for Habistack APIs."
-        }
+      "Details": {
+        "Name": "Habistack API Proxy",
+        "Description": "The API Proxy for Habistack APIs."
       },
       "LookupConfig": {
         "PathRegex": "/api/habistack.*"
@@ -74,11 +68,9 @@
       }
     },
     "{{PROJECT_LOOKUP}}-geocodio-api-proxy": {
-      "Application": {
-        "Details": {
-          "Name": "Geocodio API Proxy",
-          "Description": "The API Proxy for Geocodio APIs."
-        }
+      "Details": {
+        "Name": "Geocodio API Proxy",
+        "Description": "The API Proxy for Geocodio APIs."
       },
       "LookupConfig": {
         "PathRegex": "/api/geocodio.*"
