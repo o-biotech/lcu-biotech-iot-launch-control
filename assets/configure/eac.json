@@ -21,6 +21,13 @@
           "DefaultFile": "index.html"
         },
         "Type": "DFSProcessor"
+      },
+      "DataTokens": {
+        "lcu-state-config": {
+          "Name": "state-config",
+          "Description": "state-config",
+          "Value": "{\"Location\": \"{{DEFAULT_LOCATION}}\"}"
+        }
       }
     },
     "{{PROJECT_LOOKUP}}-iot-ensemble-api-proxy": {
