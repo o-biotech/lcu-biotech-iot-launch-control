@@ -120,6 +120,60 @@
         },
         "Type": "ProxyProcessor"
       }
+    },
+    "{{PROJECT_LOOKUP}}-freeboard-dashboard": {
+      "Details": {
+        "Description": "Freeboard dashboard",
+        "Name": "Freeboard Dashboard"
+      },
+      "LookupConfig": {
+        "PathRegex": "/freeboard.*"
+      },
+      "Package": {
+        "Details": {
+          "Package": "@semanticjs/freeboard",
+          "Version": "latest"
+        },
+        "Type": "NPMLowCodeUnit"
+      },
+      "Processor": {
+        "Details": {
+          "BaseHref": "/freeboard/",
+          "DefaultFile": "index.html"
+        },
+        "Type": "DFSProcessor"
+      },
+      "DataTokens": {
+        "lcu-state-config": {
+          "Details": {
+            "Name": "state-config",
+            "Description": "state-config"
+          },
+          "Value": "{\"FreeboardConfigURL\": \"https://www.fathym.com/templates/freeboard/DeviceDemoDashboard-BioTechFreeboard.json\"}"
+        }
+      }
+    },
+    "{{PROJECT_LOOKUP}}-freeboard-api": {
+      "Details": {
+        "Name": "Freeboard API Proxy",
+        "Description": "The API Proxy for Freeboard using the Warm Query IoT API"
+      },
+      "LookupConfig": {
+        "PathRegex": "/api/freeboard.*"
+      },
+      "Package": {
+        "Details": {
+          "APIRoot": "https://fathym-cloud-prd.azure-api.net/fcp-iotensemble/WarmQuery",
+          "Security": "lcu-subscription-key~{{IOT_ENSEMBLE_API_KEY}}"
+        },
+        "Type": "APILowCodeUnit"
+      },
+      "Processor": {
+        "Details": {
+          "InboundPath": "api/freeboard"
+        },
+        "Type": "ProxyProcessor"
+      }
     }
   },
   "Projects": {
@@ -129,7 +183,9 @@
         "{{PROJECT_LOOKUP}}-data-dashboard",
         "{{PROJECT_LOOKUP}}-iot-ensemble-api-proxy",
         "{{PROJECT_LOOKUP}}-habistack-api-proxy",
-        "{{PROJECT_LOOKUP}}-geocodio-api-proxy"
+        "{{PROJECT_LOOKUP}}-geocodio-api-proxy",
+        "{{PROJECT_LOOKUP}}-freeboard-dashboard",
+        "{{PROJECT_LOOKUP}}-freeboard-api"
       ]
     }
   }
