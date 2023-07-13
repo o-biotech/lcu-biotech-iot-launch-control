@@ -10,7 +10,7 @@
       },
       "Package": {
         "Details": {
-          "Package": "@fathym/fathym-public-web-biotech-gatsby",
+          "Package": "@fathym/v2-fathym-public-web-biotech-gatsby",
           "Version": "latest"
         },
         "Type": "NPMLowCodeUnit"
