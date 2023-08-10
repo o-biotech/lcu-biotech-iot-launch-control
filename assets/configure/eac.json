@@ -33,10 +33,11 @@
       },
       "Package": {
         "Details": {
-          "Package": "@fathym-it/fathym-data-dashboard",
-          "Version": "latest"
+          "Path": "lcu-github-artifacts-release.yml",
+          "Build": "latest"
         },
-        "Type": "NPMLowCodeUnit"
+        "SourceControlLookup": "github://{{ORGANIZATION}}/fathym-data-dashboard",
+        "Type": "GitHubLowCodeUnit"
       },
       "Processor": {
         "Details": {
@@ -51,7 +52,8 @@
             "Name": "state-config",
             "Description": "state-config"
           },
-          "Value": "{\"Location\": \"{{DEFAULT_LOCATION}}\"}"
+          "Value": "{\"Location\": \"{{DEFAULT_LOCATION}}\"}",
+          "Value": "{\"IoTAPIQuery\": \"WarmQuery?includeEmulated=false&page=1&pageSize=100\"}"
         }
       }
     },
@@ -173,6 +175,48 @@
           "InboundPath": "api/freeboard"
         },
         "Type": "ProxyProcessor"
+      }
+    }
+  },
+  "Environments": {
+    "{{EaC.PrimaryEnvironment}}": {
+      "Artifacts": {
+        "react-build-release": {
+          "Type": "GitHubArtifact",
+          "Details": {
+            "Name": "React Build/Release",
+            "Output": "./build",
+            "BuildCommand": "npm run build",
+            "InstallCommand": "npm ci",
+            "NPMRegistry": "https://registry.npmjs.org/"
+          }
+        }
+      },
+      "DevOpsActions": {
+        "github-artifacts-release-react": {
+          "ArtifactLookups": ["react-build-release"],
+          "Details": {
+            "Name": "GitHub Artifacts - Release - React",
+            "Path": "lcu-github-artifacts-release.yml",
+            "Templates": [
+              "https://raw.githubusercontent.com/lowcodeunit/infrastructure/master/github/actions/artifacts/_header.hbs.yml",
+              "https://raw.githubusercontent.com/lowcodeunit/infrastructure/master/github/actions/artifacts/release-flow.yml"
+            ]
+          }
+        }
+      },
+      "Sources": {
+        "fork|github://fathym-it/fathym-data-dashboard": {
+          "DevOpsActionTriggerLookups": ["github-artifacts-release-react"],
+          "Details": {
+            "Branches": ["main"],
+            "MainBranch": "main",
+            "Organization": "{{ORGANIZATION}}",
+            "Repository": "fathym-data-dashboard",
+            "Name": "github://{{ORGANIZATION}}/fathym-data-dashboard"
+          },
+          "Type": "GitHubSourceControl"
+        }
       }
     }
   },
