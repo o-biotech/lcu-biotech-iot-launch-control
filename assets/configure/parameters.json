@@ -11,8 +11,17 @@
       }
     ]
   },
-  "IOT_ENSEMBLE_API_KEY": {
+  "ORGANIZATION": {
     "Order": 2,
+    "Prompts": [
+      {
+        "Type": "git:organizations|select",
+        "Message": "Which organization would you like to fork code into?"
+      }
+    ]
+  },
+  "IOT_ENSEMBLE_API_KEY": {
+    "Order": 3,
     "Prompts": [
       {
         "Message": "Enter your IoT Ensemble API Key (https://www.fathym.com/dashboard/iot):"
@@ -20,7 +29,7 @@
     ]
   },
   "HABISTACK_API_KEY": {
-    "Order": 3,
+    "Order": 4,
     "Prompts": [
       {
         "Message": "Enter your Habistack API Key (https://www.fathym.com/dashboard/forecast):"
@@ -28,7 +37,7 @@
     ]
   },
   "GEOCODIO_API_KEY": {
-    "Order": 4,
+    "Order": 5,
     "Prompts": [
       {
         "Message": "Enter your Geocodio API Key (https://dash.geocod.io/apikey):"
@@ -36,7 +45,7 @@
     ]
   },
   "DEFAULT_LOCATION": {
-    "Order": 5,
+    "Order": 6,
     "Prompts": [
       {
         "Message": "Enter the default location to load the data for:"
