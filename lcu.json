@@ -1,29 +1,9 @@
 {
   "Package": {
-    "Name": "@o-biotech/lcu-biotech-iot-launch-control",
-    "Description": "An LCU for installing @o-biotech/lcu-biotech-iot-launch-control.",
+    "Name": "Basic BioTech IoT Starter",
+    "Description": "A starting point for BioTech IoT .",
     "Image": "https://www.fathym.com/assets/images/logo.png",
     "PreviewImage": "https://www.fathym.com/assets/images/logo.png",
-    "Intents": [
-      "BioTech",
-      "IoT Dashboard",
-      "Launch Control",
-      "Getting Started",
-      "Medical Devices",
-      "Azure Cloud"
-    ]
-  },
-  "Configurations": {
-    "Basic": {
-      "Name": "Basic BioTech IoT Starter",
-      "Description": "A starting point for BioTech IoT .",
-      "Phases": [
-        {
-          "Name": "Configure BioTech IoT",
-          "Order": 1,
-          "Asset": "configure"
-        }
-      ]
-    }
+    "UsesGit": true
   }
 }
