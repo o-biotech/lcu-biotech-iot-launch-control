@@ -121,7 +121,7 @@
         "lcu-state-config": {
           "Name": "state-config",
           "Description": "state-config",
-          "Value": "{\"FreeboardConfigURL\": \"https://www.fathym.com/templates/freeboard/DeviceDemoDashboard-BioTech.json\"}"
+          "Value": "{\"FreeboardConfigURL\": \"https://www.fathym.com/templates/freeboard/DeviceDemoDashboard-BioTechFreeboard.json\"}"
         }
       }
     },
