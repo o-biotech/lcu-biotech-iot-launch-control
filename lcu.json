@@ -1,11 +1,11 @@
 {
   "Package": {
-    "Name": "@o-biotech/lcu-biotech-iot-launch-control",
-    "Description": "An LCU for installing @o-biotech/lcu-biotech-iot-launch-control.",
+    "Name": "Biotech Launch Pad - GitHub Fork",
+    "Description": "A Biotech launch pad that consists of a data dashboard (GitHub fork) and Freeboard dashboard (NPM) auto-populated with emulated data or device data from multiple APIs.",
     "Image": "https://www.fathym.com/assets/images/logo.png",
     "PreviewImage": "https://www.fathym.com/assets/images/logo.png",
     "Intents": [
-      "BioTech",
+      "Biotech",
       "IoT Dashboard",
       "Launch Control",
       "Getting Started",
@@ -15,11 +15,11 @@
   },
   "Configurations": {
     "Basic": {
-      "Name": "Basic BioTech IoT Starter",
-      "Description": "A starting point for BioTech IoT .",
+      "Name": "Biotech Launch Pad - GitHub Fork",
+      "Description": "A Biotech launch pad that consists of a data dashboard (GitHub fork) and Freeboard dashboard (NPM) auto-populated with emulated data or device data from multiple APIs.",
       "Phases": [
         {
-          "Name": "Configure BioTech IoT",
+          "Name": "Configuring Biotech Launch Pad",
           "Order": 1,
           "Asset": "configure"
         }
