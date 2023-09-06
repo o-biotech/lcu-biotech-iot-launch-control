@@ -1,6 +1,6 @@
 {
   "Package": {
-    "Name": "Biotech Launch Pad - GitHub Fork ",
+    "Name": "Biotech Launch Pad - GitHub Fork",
     "Description": "A Biotech launch pad that consists of a data dashboard (GitHub fork) and Freeboard dashboard (NPM) auto-populated with emulated data or device data from multiple APIs.",
     "Image": "https://www.fathym.com/assets/images/logo.png",
     "PreviewImage": "https://www.fathym.com/assets/images/logo.png",
