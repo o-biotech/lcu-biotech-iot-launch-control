@@ -101,7 +101,7 @@
     },
     "$6": {
       "Application": {
-        "Description": "Freeboard Dashboard",
+        "Description": "A Freeboard dashboard to view emulated or device data auto-populated from IoT Ensemble.",
         "Name": "Freeboard Dashboard"
       },
       "LookupConfig": {
