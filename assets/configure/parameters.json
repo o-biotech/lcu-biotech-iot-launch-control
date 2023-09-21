@@ -4,7 +4,7 @@
     "Prompts": [
       {
         "Type": "eac:projects|select",
-        "Message": "Choose the project to deploy the package to?",
+        "Message": "Choose the project to deploy the Biotech Launch Pad - GitHub Fork to?",
         "Arguments": {
           "CreateText": "Create a project"
         }

@@ -19,7 +19,7 @@
       "Description": "A Biotech launch pad that consists of a data dashboard (GitHub fork) and Freeboard dashboard (NPM) auto-populated with emulated data or device data from multiple APIs.",
       "Phases": [
         {
-          "Name": "Configuring Biotech Launch Pad",
+          "Name": "Setting Up Biotech Launch Pad - GitHub Fork",
           "Order": 1,
           "Asset": "configure"
         }

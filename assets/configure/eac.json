@@ -124,7 +124,7 @@
     },
     "{{PROJECT_LOOKUP}}-freeboard-dashboard": {
       "Details": {
-        "Description": "Freeboard dashboard",
+        "Description": "A Freeboard dashboard to view emulated or device data auto-populated from IoT Ensemble.",
         "Name": "Freeboard Dashboard"
       },
       "LookupConfig": {
